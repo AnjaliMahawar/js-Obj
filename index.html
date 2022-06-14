@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var student ={//ja obj
+                          name:'Anjali',
+                          surname:'mahawar',
+                          Address:'Neemuch',
+                           friends:['tannu','vishal','Rahul','preet'] ,//js obj can contaian array
+                           teachers:[{
+                                        name:'Anil ji',
+                                        contact:'12345566'
+                                     },
+                                     { 
+                                        name:'hemant ji',
+                                        contact:'78945662'
+
+                                     }],
+
+                           siblings:['tannu','pooja']
+
+                    }
+                    console.log(student.name)
+                    console.log(student.surname)
+                    console.log(student.name+" have "+student.friends.length-1+' friends')
+                    console.log(student.friends[1])
+                   // console.log(student.siblings[0])
+                    for(let j=0;j<=student.siblings.length;j++){
+                    console.log('siblings '+student.siblings[j])
+                   }
+                    console.log(student.teachers[0].name)
+                   for(var i=0;i<=student.teachers.length;i++)
+                   console.log(student.teachers[i].name)
+                 
+
+
+    </script>
+</body>
+</html>
